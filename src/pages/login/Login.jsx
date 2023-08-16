@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import './login.scss';
 
@@ -62,3 +63,14 @@ function Login() {
 }
 
 export default Login;
+=======
+import "./login.scss"
+
+const Login = () => {
+  return (
+    <div>Login</div>
+  )
+}
+
+export default Login
+>>>>>>> f8d00d7c38f56911c910891e1f367cfe426f9679
