@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "hustlex-hack",
-=======
-  "name": "Hustlex-Hack",
->>>>>>> f8d00d7c38f56911c910891e1f367cfe426f9679
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,14 +8,13 @@
     "@mui/icons-material": "^5.4.4",
     "@mui/material": "^5.4.4",
     "@mui/x-data-grid": "^5.5.1",
-<<<<<<< HEAD
     "@nivo/pie": "^0.83.0",
-=======
->>>>>>> f8d00d7c38f56911c910891e1f367cfe426f9679
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.8.0",
     "react-circular-progressbar": "^2.0.4",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2",
@@ -51,13 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "",
   "license": "ISC"
-=======
-  }
->>>>>>> f8d00d7c38f56911c910891e1f367cfe426f9679
 }

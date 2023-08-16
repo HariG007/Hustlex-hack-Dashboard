@@ -20,11 +20,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-<<<<<<< HEAD
         <Link to="/home" style={{ textDecoration: "none" }}>
-=======
-        <Link to="/" style={{ textDecoration: "none" }}>
->>>>>>> f8d00d7c38f56911c910891e1f367cfe426f9679
           <span className="logo">HMS</span>
         </Link>
       </div>

@@ -7,9 +7,10 @@ import Single from './pages/single/Single';
 import New from './pages/new/New';
 import { productInputs, userInputs } from './formSource';
 import './style/dark.scss';
-
+import PatientHome from './components/PatientHome/PatientHome';
 
 export default function Routees() {
+  
   return (
     <div>
  <BrowserRouter>
@@ -19,7 +20,7 @@ export default function Routees() {
 
     {/* Home route */}
     <Route exact path="/nursehome" element={<Home />} />
-
+    <Route exact path="/patienthome" element={<PatientHome />} />
     {/* Users routes */}
     <Route exact path="/users" element={<List />} />
     <Route exact path="/users/:userId" element={<Single />} />

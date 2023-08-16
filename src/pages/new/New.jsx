@@ -1,12 +1,19 @@
 import "./new.scss";
+import { useNavigate } from 'react-router-dom';
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { useState } from "react";
 
+
 const New = ({ inputs, title }) => {
+  const navigate = useNavigate(); // Initialize the navigate function
   const [file, setFile] = useState("");
 
+  const handleAdd = () => {
+    
+      navigate('/users'); // Use navigate for redirection
+  };
   return (
     <div className="new">
       <Sidebar />
@@ -46,7 +53,7 @@ const New = ({ inputs, title }) => {
                   <input type={input.type} placeholder={input.placeholder} />
                 </div>
               ))}
-              <button>Add</button>
+              <button onClick={handleAdd}>Add</button>
             </form>
           </div>
         </div>

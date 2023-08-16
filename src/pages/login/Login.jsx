@@ -1,8 +1,9 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './login.scss';
-
 function Login() {
+const navigate = useNavigate(); // Initialize the navigate function
+
   const [userType, setUserType] = useState('patient');
 
   const handleUserTypeChange = (newUserType) => {
@@ -11,9 +12,9 @@ function Login() {
 
   const handleLogin = () => {
     if (userType === 'nurse') {
-      window.location.href = '/nursehome'; // Redirect to NurseDashboard
+      navigate('/nursehome'); // Use navigate for redirection
     } else {
-      window.location.href = '/patienthome'; // Redirect to PatientDashboard
+      navigate('/patienthome'); // Use navigate for redirection
     }
   };
 
@@ -52,7 +53,7 @@ function Login() {
 
               {/* Login button */}
               <div className="field button-field">
-                <button ><a href='/nursehome'>Login</a></button>
+                <button onClick={handleLogin}>Login</button>
               </div>
             </form>
           </div>
@@ -63,14 +64,3 @@ function Login() {
 }
 
 export default Login;
-=======
-import "./login.scss"
-
-const Login = () => {
-  return (
-    <div>Login</div>
-  )
-}
-
-export default Login
->>>>>>> f8d00d7c38f56911c910891e1f367cfe426f9679
